@@ -160,14 +160,40 @@ img {
 }
 
 .card-data svg {
+  cursor: pointer;
+  stroke: #212121;
+  opacity: 0.4;
+  transition: all ease 0.3s;
+.like-icon {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.like-icon svg {
     cursor: pointer;
     stroke: #212121;
     opacity: .4;
     transition: all ease 0.3s;
 }
 
+.card-data svg:hover {
+    opacity: 1;
+}
 
 
+/*For like icon hover effect: change svg opacity*/
+
+.sr-only {
+    clip: rect(1px 1px 1px 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
 
 #image-3 {
   border-radius: 10px;
